@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - ApiHeaders
 
-struct ApiHeaders {
+public struct HTTPHeaders {
     static var commonHeaders: [String: String] {
         return [
             "Content-Type": "application/json",

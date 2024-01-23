@@ -9,7 +9,7 @@ import Foundation
 
 // MARK: - APIMethod
 
-enum APIMethod: String {
+public enum APIMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"

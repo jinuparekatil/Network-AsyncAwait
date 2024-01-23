@@ -1,5 +1,5 @@
 //
-//  APIError.swift
+//  HTTPError.swift
 //  MVVMSampleUikit
 //
 //  Created by Jinu on 22/01/2024.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-// MARK: - APIError
+// MARK: - HTTPError
 
-enum APIError: Error {
+public enum APIError: Error {
     case networkError(Error)
     case decodingError(Error)
     case serverError(Int)
