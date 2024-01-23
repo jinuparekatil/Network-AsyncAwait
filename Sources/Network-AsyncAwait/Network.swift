@@ -18,7 +18,7 @@ public protocol NetworkService {
 }
 
 
-public class NetworkManager: NetworkService {
+public class Network: NetworkService {
         
     public func fetchData<T: Decodable>(
             from request: URLRequest
