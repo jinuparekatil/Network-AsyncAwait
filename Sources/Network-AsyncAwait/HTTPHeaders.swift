@@ -1,5 +1,5 @@
 //
-//  ApiHeaders.swift
+//  HTTPHeaders.swift
 //  MVVMSampleUikit
 //
 //  Created by Jinu on 22/01/2024.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-// MARK: - ApiHeaders
+// MARK: - HTTPHeaders
 
 public struct HTTPHeaders {
     static var commonHeaders: [String: String] {

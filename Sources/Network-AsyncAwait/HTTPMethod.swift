@@ -1,5 +1,5 @@
 //
-//  APIMethod.swift
+//  vMethod.swift
 //  MVVMSampleUikit
 //
 //  Created by Jinu on 22/01/2024.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-// MARK: - APIMethod
+// MARK: - HTTPMethod
 
-public enum APIMethod: String {
+public enum HTTPMethod: String {
     case get = "GET"
     case post = "POST"
     case put = "PUT"

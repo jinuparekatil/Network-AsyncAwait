@@ -8,7 +8,7 @@
 import Foundation
 
 // MARK: - HTTPRequestParameters
-public enum HTTPRequestParameters {
+public enum APIRequestParameters {
     case body(_: [String : Any]?)
     case url(_: [String:String]?)
 }

@@ -7,20 +7,20 @@
 
 import Foundation
 
-protocol NetworkService {
+public protocol NetworkService {
     func fetchData<T: Decodable>(from request: URLRequest) async throws -> T
     func performRequest<T: Decodable>(
         to endpoint: String,
-        method: APIMethod,
+        method: HTTPMethod,
         headers: [String: String],
         body: [String: Any]
     ) async throws -> T
 }
 
 
-class NetworkManager: NetworkService {
+public class NetworkManager: NetworkService {
         
-        func fetchData<T: Decodable>(
+    public func fetchData<T: Decodable>(
             from request: URLRequest
         ) async throws -> T {
             let session = URLSession.shared
@@ -43,15 +43,15 @@ class NetworkManager: NetworkService {
             }
         }
         
-         func performRequest<T: Decodable>(
+    public func performRequest<T: Decodable>(
             to endpoint: String,
-            method: APIMethod,
+            method: HTTPMethod,
             headers: [String: String] = [:],
             body: [String: Any] = [:]
         ) async throws -> T {
             var request = URLRequest(url: URL(string: endpoint)!)
             request.httpMethod = method.rawValue
-            request.allHTTPHeaderFields = headers.isEmpty ? ApiHeaders.commonHeaders : headers
+            request.allHTTPHeaderFields = headers.isEmpty ? HTTPHeaders.commonHeaders : headers
             
             if method == .post || method == .put {
                 request.httpBody = try JSONSerialization.data(withJSONObject: body)
