@@ -18,21 +18,24 @@ public class RequestBuilder: Request {
         self.path = path
     }
     
+    @discardableResult
     public func set(method: HTTPMethod) -> Self {
         self.method = method
         return self
     }
-    
+    @discardableResult
     public func set(path: String) -> Self {
         self.path = path
         return self
     }
     
+    @discardableResult
     public func set(headers: [String : String]?) -> Self {
         self.headers = headers
         return self
     }
     
+    @discardableResult
     public func set(parameters: APIRequestParameters?) -> Self {
         self.parameters = parameters
         return self
