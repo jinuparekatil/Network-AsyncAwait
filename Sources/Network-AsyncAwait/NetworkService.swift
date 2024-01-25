@@ -7,20 +7,12 @@
 
 import Foundation
 
-public protocol NetworkService {
-    func fetchData<T: Decodable>(with builder: RequestBuilder) async throws -> T
-    func performRequest<T: Decodable>(
-        baseURL: URL,
-        to endpoint: String,
-        method: HTTPMethod,
-        headers: [String: String],
-        body: APIRequestParameters
-    ) async throws -> T
-}
 
-public class Network: NetworkService {
-    private var urlSession: URLSession
-    init(urlSession: URLSession = .shared) {
+
+public class NetworkService: NetworkProtocol {
+    public var urlSession: URLSession
+    
+    public init(urlSession: URLSession = .shared) {
         self.urlSession = urlSession
     }
     public func fetchData<T: Decodable>(with builder: RequestBuilder) async throws -> T {
