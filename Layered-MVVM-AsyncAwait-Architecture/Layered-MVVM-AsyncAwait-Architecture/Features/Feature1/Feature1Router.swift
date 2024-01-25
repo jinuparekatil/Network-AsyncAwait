@@ -19,9 +19,10 @@ class Feature1Router {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
 
-            let feature2ViewController = Feature2ViewController()
-            // Additional setup if needed
-            self.viewController?.navigationController?.pushViewController(feature2ViewController, animated: true)
+            let randomValueGenerator = SimpleRandomValueGenerator()
+                   let viewModel2 = ViewModel2(randomValueGenerator: randomValueGenerator)
+                   let viewController2 = Feature2ViewController(viewModel2: viewModel2)            // Additional setup if needed
+            self.viewController?.navigationController?.pushViewController(viewController2, animated: true)
         }
 
     }

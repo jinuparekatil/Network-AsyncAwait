@@ -44,4 +44,12 @@ class HomeViewController: UIViewController {
         // Fetch guest data
         viewModel.fetchData()
     }
+    
+    func goToViewController2() {
+            // Injecting RandomValueGenerator into ViewModel2
+            let randomValueGenerator = SimpleRandomValueGenerator()
+            let viewModel2 = ViewModel2(randomValueGenerator: randomValueGenerator)
+            let viewController2 = Feature2ViewController(viewModel2: viewModel2)
+            navigationController?.pushViewController(viewController2, animated: true)
+        }
 }

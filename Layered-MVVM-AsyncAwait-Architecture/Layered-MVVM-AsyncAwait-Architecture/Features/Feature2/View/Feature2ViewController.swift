@@ -8,22 +8,44 @@
 import UIKit
 
 class Feature2ViewController: UIViewController {
+    
+    private let viewModel2: ViewModel2
+
+    init(viewModel2: ViewModel2) {
+        self.viewModel2 = viewModel2
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupUI()
+        displayRandomValue()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    func setupUI() {
+        view.backgroundColor = .white
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let label = UILabel()
+        label.text = "Random Value: "
+        label.textAlignment = .center
+        view.addSubview(label)
+
+        // Add constraints here (e.g., centerX, centerY)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        NSLayoutConstraint.activate([
+            label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            label.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        ])
     }
-    */
 
+
+    func displayRandomValue() {
+        // Using the injected ViewModel2
+        let randomValue = viewModel2.getRandomValue()
+        print("Random Value in ViewController2: \(randomValue)")
+    }
 }
