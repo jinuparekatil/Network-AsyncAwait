@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761574092B62545800B00C93 /* NetworkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761574082B62545800B00C93 /* NetworkManagerTests.swift */; };
+		7615740B2B62548C00B00C93 /* Feature1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615740A2B62548C00B00C93 /* Feature1Tests.swift */; };
+		7615740E2B6255D200B00C93 /* MockUrlProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7615740D2B6255D200B00C93 /* MockUrlProtocol.swift */; };
+		761574162B625B1B00B00C93 /* Feature2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761574152B625B1B00B00C93 /* Feature2ViewController.swift */; };
+		761574182B625C0000B00C93 /* Feature2Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761574172B625C0000B00C93 /* Feature2Router.swift */; };
+		7615741A2B625C1000B00C93 /* Feature1Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761574192B625C1000B00C93 /* Feature1Router.swift */; };
 		76A833AB2B6250DD00E3F9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833AA2B6250DD00E3F9F5 /* AppDelegate.swift */; };
 		76A833AD2B6250DD00E3F9F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833AC2B6250DD00E3F9F5 /* SceneDelegate.swift */; };
 		76A833AF2B6250DD00E3F9F5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833AE2B6250DD00E3F9F5 /* ViewController.swift */; };
@@ -16,6 +22,19 @@
 		76A833C22B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833C12B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureTests.swift */; };
 		76A833CC2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833CB2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITests.swift */; };
 		76A833CE2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833CD2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITestsLaunchTests.swift */; };
+		76A833DD2B62510800E3F9F5 /* Network-AsyncAwait in Frameworks */ = {isa = PBXBuildFile; productRef = 76A833DC2B62510800E3F9F5 /* Network-AsyncAwait */; };
+		76A833F42B62513800E3F9F5 /* APIHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E02B62513700E3F9F5 /* APIHeaders.swift */; };
+		76A833F52B62513800E3F9F5 /* APIMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E12B62513700E3F9F5 /* APIMethod.swift */; };
+		76A833F62B62513800E3F9F5 /* APIEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E22B62513700E3F9F5 /* APIEndPoints.swift */; };
+		76A833F72B62513800E3F9F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E32B62513700E3F9F5 /* NetworkManager.swift */; };
+		76A833F82B62513800E3F9F5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E52B62513700E3F9F5 /* Constants.swift */; };
+		76A833F92B62513800E3F9F5 /* DateUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E72B62513700E3F9F5 /* DateUtility.swift */; };
+		76A833FA2B62513800E3F9F5 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833E82B62513700E3F9F5 /* KeychainManager.swift */; };
+		76A833FB2B62513800E3F9F5 /* Feature1ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833ED2B62513800E3F9F5 /* Feature1ViewModel.swift */; };
+		76A833FC2B62513800E3F9F5 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833EF2B62513800E3F9F5 /* Chapter.swift */; };
+		76A833FD2B62513800E3F9F5 /* chapterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833F02B62513800E3F9F5 /* chapterRepository.swift */; };
+		76A833FE2B62513800E3F9F5 /* Guest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833F12B62513800E3F9F5 /* Guest.swift */; };
+		76A833FF2B62513800E3F9F5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A833F32B62513800E3F9F5 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		761574082B62545800B00C93 /* NetworkManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTests.swift; sourceTree = "<group>"; };
+		7615740A2B62548C00B00C93 /* Feature1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Tests.swift; sourceTree = "<group>"; };
+		7615740D2B6255D200B00C93 /* MockUrlProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockUrlProtocol.swift; sourceTree = "<group>"; };
+		761574152B625B1B00B00C93 /* Feature2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature2ViewController.swift; sourceTree = "<group>"; };
+		761574172B625C0000B00C93 /* Feature2Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature2Router.swift; sourceTree = "<group>"; };
+		761574192B625C1000B00C93 /* Feature1Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature1Router.swift; sourceTree = "<group>"; };
 		76A833A72B6250DD00E3F9F5 /* Layered-MVVM-AsyncAwait-Architecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Layered-MVVM-AsyncAwait-Architecture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A833AA2B6250DD00E3F9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76A833AC2B6250DD00E3F9F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +74,19 @@
 		76A833C72B6250E700E3F9F5 /* Layered-MVVM-AsyncAwait-ArchitectureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Layered-MVVM-AsyncAwait-ArchitectureUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76A833CB2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layered_MVVM_AsyncAwait_ArchitectureUITests.swift; sourceTree = "<group>"; };
 		76A833CD2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layered_MVVM_AsyncAwait_ArchitectureUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		76A833DA2B6250FF00E3F9F5 /* Network-AsyncAwait */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = "Network-AsyncAwait"; path = ..; sourceTree = "<group>"; };
+		76A833E02B62513700E3F9F5 /* APIHeaders.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHeaders.swift; sourceTree = "<group>"; };
+		76A833E12B62513700E3F9F5 /* APIMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMethod.swift; sourceTree = "<group>"; };
+		76A833E22B62513700E3F9F5 /* APIEndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoints.swift; sourceTree = "<group>"; };
+		76A833E32B62513700E3F9F5 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		76A833E52B62513700E3F9F5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76A833E72B62513700E3F9F5 /* DateUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtility.swift; sourceTree = "<group>"; };
+		76A833E82B62513700E3F9F5 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		76A833ED2B62513800E3F9F5 /* Feature1ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feature1ViewModel.swift; sourceTree = "<group>"; };
+		76A833EF2B62513800E3F9F5 /* Chapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		76A833F02B62513800E3F9F5 /* chapterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = chapterRepository.swift; sourceTree = "<group>"; };
+		76A833F12B62513800E3F9F5 /* Guest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guest.swift; sourceTree = "<group>"; };
+		76A833F32B62513800E3F9F5 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76A833DD2B62510800E3F9F5 /* Network-AsyncAwait in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +115,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		761574062B62539E00B00C93 /* SharedTests */ = {
+			isa = PBXGroup;
+			children = (
+				761574072B62542E00B00C93 /* ServicesTests */,
+				761574102B6258AF00B00C93 /* Mocks */,
+				7615740C2B6255A600B00C93 /* Models */,
+			);
+			path = SharedTests;
+			sourceTree = "<group>";
+		};
+		761574072B62542E00B00C93 /* ServicesTests */ = {
+			isa = PBXGroup;
+			children = (
+				761574082B62545800B00C93 /* NetworkManagerTests.swift */,
+			);
+			path = ServicesTests;
+			sourceTree = "<group>";
+		};
+		7615740C2B6255A600B00C93 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7615740F2B6256BA00B00C93 /* apptest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = apptest;
+			sourceTree = "<group>";
+		};
+		761574102B6258AF00B00C93 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				7615740D2B6255D200B00C93 /* MockUrlProtocol.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		761574112B625AD900B00C93 /* Feature2 */ = {
+			isa = PBXGroup;
+			children = (
+				761574142B625AFB00B00C93 /* View */,
+				761574132B625AF400B00C93 /* ViewModel */,
+				761574122B625AE300B00C93 /* Model */,
+				761574172B625C0000B00C93 /* Feature2Router.swift */,
+			);
+			path = Feature2;
+			sourceTree = "<group>";
+		};
+		761574122B625AE300B00C93 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		761574132B625AF400B00C93 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		761574142B625AFB00B00C93 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				761574152B625B1B00B00C93 /* Feature2ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		76A8339E2B6250DD00E3F9F5 = {
 			isa = PBXGroup;
 			children = (
+				76A833DA2B6250FF00E3F9F5 /* Network-AsyncAwait */,
 				76A833A92B6250DD00E3F9F5 /* Layered-MVVM-AsyncAwait-Architecture */,
 				76A833C02B6250E700E3F9F5 /* Layered-MVVM-AsyncAwait-ArchitectureTests */,
 				76A833CA2B6250E700E3F9F5 /* Layered-MVVM-AsyncAwait-ArchitectureUITests */,
 				76A833A82B6250DD00E3F9F5 /* Products */,
+				76A833DB2B62510800E3F9F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +213,8 @@
 		76A833A92B6250DD00E3F9F5 /* Layered-MVVM-AsyncAwait-Architecture */ = {
 			isa = PBXGroup;
 			children = (
+				76A833EA2B62513800E3F9F5 /* Features */,
+				76A833DE2B62513700E3F9F5 /* Shared */,
 				76A833AA2B6250DD00E3F9F5 /* AppDelegate.swift */,
 				76A833AC2B6250DD00E3F9F5 /* SceneDelegate.swift */,
 				76A833AE2B6250DD00E3F9F5 /* ViewController.swift */,
@@ -113,6 +229,9 @@
 		76A833C02B6250E700E3F9F5 /* Layered-MVVM-AsyncAwait-ArchitectureTests */ = {
 			isa = PBXGroup;
 			children = (
+				7615740F2B6256BA00B00C93 /* apptest */,
+				76A834002B6252D800E3F9F5 /* FeaturesTests */,
+				761574062B62539E00B00C93 /* SharedTests */,
 				76A833C12B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureTests.swift */,
 			);
 			path = "Layered-MVVM-AsyncAwait-ArchitectureTests";
@@ -125,6 +244,113 @@
 				76A833CD2B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureUITestsLaunchTests.swift */,
 			);
 			path = "Layered-MVVM-AsyncAwait-ArchitectureUITests";
+			sourceTree = "<group>";
+		};
+		76A833DB2B62510800E3F9F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76A833DE2B62513700E3F9F5 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				76A833DF2B62513700E3F9F5 /* NetworkServices */,
+				76A833E42B62513700E3F9F5 /* Constants */,
+				76A833E62B62513700E3F9F5 /* Utilities */,
+				76A833E92B62513700E3F9F5 /* Router */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		76A833DF2B62513700E3F9F5 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				76A833E02B62513700E3F9F5 /* APIHeaders.swift */,
+				76A833E12B62513700E3F9F5 /* APIMethod.swift */,
+				76A833E22B62513700E3F9F5 /* APIEndPoints.swift */,
+				76A833E32B62513700E3F9F5 /* NetworkManager.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		76A833E42B62513700E3F9F5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				76A833E52B62513700E3F9F5 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		76A833E62B62513700E3F9F5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				76A833E72B62513700E3F9F5 /* DateUtility.swift */,
+				76A833E82B62513700E3F9F5 /* KeychainManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		76A833E92B62513700E3F9F5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		76A833EA2B62513800E3F9F5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				761574112B625AD900B00C93 /* Feature2 */,
+				76A833EB2B62513800E3F9F5 /* Feature1 */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		76A833EB2B62513800E3F9F5 /* Feature1 */ = {
+			isa = PBXGroup;
+			children = (
+				76A833EC2B62513800E3F9F5 /* ViewModel */,
+				76A833EE2B62513800E3F9F5 /* Model */,
+				76A833F22B62513800E3F9F5 /* View */,
+				761574192B625C1000B00C93 /* Feature1Router.swift */,
+			);
+			path = Feature1;
+			sourceTree = "<group>";
+		};
+		76A833EC2B62513800E3F9F5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				76A833ED2B62513800E3F9F5 /* Feature1ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		76A833EE2B62513800E3F9F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				76A833EF2B62513800E3F9F5 /* Chapter.swift */,
+				76A833F02B62513800E3F9F5 /* chapterRepository.swift */,
+				76A833F12B62513800E3F9F5 /* Guest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		76A833F22B62513800E3F9F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76A833F32B62513800E3F9F5 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		76A834002B6252D800E3F9F5 /* FeaturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				7615740A2B62548C00B00C93 /* Feature1Tests.swift */,
+			);
+			path = FeaturesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +369,9 @@
 			dependencies = (
 			);
 			name = "Layered-MVVM-AsyncAwait-Architecture";
+			packageProductDependencies = (
+				76A833DC2B62510800E3F9F5 /* Network-AsyncAwait */,
+			);
 			productName = "Layered-MVVM-AsyncAwait-Architecture";
 			productReference = 76A833A72B6250DD00E3F9F5 /* Layered-MVVM-AsyncAwait-Architecture.app */;
 			productType = "com.apple.product-type.application";
@@ -259,8 +488,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				76A833AF2B6250DD00E3F9F5 /* ViewController.swift in Sources */,
+				76A833F52B62513800E3F9F5 /* APIMethod.swift in Sources */,
+				76A833F42B62513800E3F9F5 /* APIHeaders.swift in Sources */,
+				76A833FC2B62513800E3F9F5 /* Chapter.swift in Sources */,
+				761574162B625B1B00B00C93 /* Feature2ViewController.swift in Sources */,
+				76A833F72B62513800E3F9F5 /* NetworkManager.swift in Sources */,
+				76A833FF2B62513800E3F9F5 /* HomeViewController.swift in Sources */,
 				76A833AB2B6250DD00E3F9F5 /* AppDelegate.swift in Sources */,
 				76A833AD2B6250DD00E3F9F5 /* SceneDelegate.swift in Sources */,
+				76A833F62B62513800E3F9F5 /* APIEndPoints.swift in Sources */,
+				761574182B625C0000B00C93 /* Feature2Router.swift in Sources */,
+				76A833F92B62513800E3F9F5 /* DateUtility.swift in Sources */,
+				76A833F82B62513800E3F9F5 /* Constants.swift in Sources */,
+				76A833FB2B62513800E3F9F5 /* Feature1ViewModel.swift in Sources */,
+				76A833FD2B62513800E3F9F5 /* chapterRepository.swift in Sources */,
+				76A833FE2B62513800E3F9F5 /* Guest.swift in Sources */,
+				76A833FA2B62513800E3F9F5 /* KeychainManager.swift in Sources */,
+				7615741A2B625C1000B00C93 /* Feature1Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7615740B2B62548C00B00C93 /* Feature1Tests.swift in Sources */,
+				761574092B62545800B00C93 /* NetworkManagerTests.swift in Sources */,
 				76A833C22B6250E700E3F9F5 /* Layered_MVVM_AsyncAwait_ArchitectureTests.swift in Sources */,
+				7615740E2B6255D200B00C93 /* MockUrlProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -607,6 +854,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		76A833DC2B62510800E3F9F5 /* Network-AsyncAwait */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "Network-AsyncAwait";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76A8339F2B6250DD00E3F9F5 /* Project object */;
 }

@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Layered_MVVM_AsyncAwait_Architecture
 
 final class NetworkManagerTests: XCTestCase {
 

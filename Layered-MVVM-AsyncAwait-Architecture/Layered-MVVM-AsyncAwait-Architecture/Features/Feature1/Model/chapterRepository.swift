@@ -9,34 +9,49 @@ import Network_AsyncAwait
 import Combine
 import Foundation
 
-protocol ChaptersRepository {
-    func fetchChapters() async throws -> Chapters
+protocol GuestRepository {
+    func fetchGuest() async throws -> Guest
 }
 
-class ChaptersRepositoryImplementation: ChaptersRepository {
+class GuestRepositoryImplementation: GuestRepository {
     
-    private var network: NetworkManager
+    @Published private(set) var guest: Guest?
+    @Published private(set) var error: Error?
     
-    init(network: NetworkManager) {
-        self.network = network
+    private let apiEndPoint: APIEndPoints = .guestToken
+    private var method: APIMethod = .post
+    private let baseURLString = Constants.API.baseURL
+    
+    private let networkManager: NetworkManager
+    
+    init(networkManager: NetworkManager) {
+        self.networkManager = networkManager
     }
-
-    // Assuming `BGNetworkManager` supports async/await
-    // If not, you might need to use something like Combine's `Future` to wrap asynchronous calls.
-
-    func fetchChapters() async throws -> Chapters {
-        guard let baseURL = URL(string: Constants.API.baseURL) else {
+    
+    func fetchGuest() async throws -> Guest {
+        guard let baseURL = URL(string: baseURLString) else {
             throw APIError.urlError
         }
-
-        let request = RequestBuilder(baseURL: baseURL, path: APIEndPoints.chapters.path)
-        request.set(headers: APIHeaders.defaultHeaders)
-        request.set(method: HTTPMethod.get)
-
+        
+        let parameters: APIRequestParameters = .body([
+            "secret_key": Constants.API.secretKey,
+            "device_type": Constants.API.deviceType,
+            "device_id": Constants.API.devicId,
+            "push_token": ""
+        ])
+        
+        let builder = RequestBuilder(baseURL: baseURL, path: apiEndPoint.path)
+        builder.set(headers: APIHeaders.defaultHeaders)
+        builder.set(method: HTTPMethod(rawValue: method.rawValue) ?? .post)
+        builder.set(parameters: parameters)
+        
         do {
-            return try await network.makeRequest(with: request, type: Chapters.self)
+            return try await networkManager.makeRequest(with: builder, type: Guest.self)
         } catch {
-            throw APIError.networkError(error)
+            // Set the error property for further handling, e.g., UI updates
+            self.error = error
+            throw error
         }
     }
 }
+
